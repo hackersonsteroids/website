@@ -1,0 +1,23 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    
+    steps:
+      - name: Deploy website
+        run: |
+          echo "Starting deployment..."
+          /home/bsec/deploy.sh
+      
+      - name: Verify deployment
+        run: |
+          echo "Deployment complete!"
+          echo "Files in: /home/bsec/website"
+          ls -la /home/bsec/website
+          echo "Live at: https://hackersonsteroids.org"
