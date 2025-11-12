@@ -1,82 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>you probably shouldn't be here</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="static/css/404.css">
+    <meta charset="UTF-8">
+    <title>404 Not Found - hackersOnSteroids</title>
+    <link rel="stylesheet" href="static/css/error.css">
 </head>
 <body>
-  <div class="scanline" aria-hidden="true"></div>
-  <header>
-    <div class="led" aria-hidden="true"></div>
-    <div>
-      <h1>UNKNOWN PAGE
-        <small>this page does not exist. you do not exist. we are in agreement.</small>
-      </h1>
-    </div>
-  </header>
+    <div class="scene">
+  <div class="overlay"></div>
+  <div class="overlay"></div>
+  <div class="overlay"></div>
+  <div class="overlay"></div>
+  <span class="bg-403">404</span>
+  <div class="text">
+    <span class="hero-text"></span>
+    <span class="msg">page <span>not found</span></span>
+    <span class="support">
+      <span>this one 100% exists though</span>
+      <a href="index.html">go back home</a>
+    </span>
+  </div>
+</div>
 
-  <main>
-    <!-- Left column -->
-    <section class="panel" aria-label="system-terminal">
-      <h2>Interactive Terminal <span class="tag">try typing "help"</span></h2>
-      <div class="terminal" id="terminal"></div>
+<div class="footer">
+  <p id="unique-id-container" style="display: none; margin-top: 10px; opacity: 0.7;">
+    <span style="color: #ff0000;">incident ID:</span> <span id="unique-id" style="font-weight: bold; letter-spacing: 1px;"></span>
+  </p>
+  <p style="margin-top: 5px;">hackersOnSteroids // est. 2024</p>
+</div>
 
-      <h2 style="margin-top:1rem;">Useful(?) Links <span class="tag">hos in a nutshell</span></h2>
-      <ul class="links-list">
-        <li>
-          <a href="https://hackersonsteroids.org/" target="_blank" rel="noreferrer noopener">
-            hos main page
-            <span class="badge">almost javascript-free</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://blog.hackersonsteroids.org/" target="_blank" rel="noreferrer noopener">
-            our blog
-            <span class="badge">by humans</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://hos.team/discord" target="_blank" rel="noreferrer noopener">
-            discord server
-            <span class="badge">always online</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">
-            infrastructure access
-            <span class="badge" style="color:#ff4d6d;">critical</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Right column -->
-    <section class="panel" aria-label="intel-panel">
-      <h2>Covert Transmission <span class="tag">dad jokes feed</span></h2>
-      <div class="joke-box" id="jokeBox">
-        <div class="joke-title">true hos members laugh at this</div>
-        <div id="jokeText">if you can read this, humor subsystem is online.</div>
-      </div>
-
-      <h2 style="margin-top:1rem;">About hoS <span class="tag">classified*</span></h2>
-      <p style="font-size:0.7rem; color:var(--muted); line-height:1.5;">
-        * not really classified<br />
-        - we create things and we break things<br />
-        - we don't actually do steroids (that would make typing harder)<br />
-        - hoS has been founded on 9 Dec 2024<br />
-        - based on brazil<br />
-        - members from all over the world<br />
-        - currently the top-ranked brazilian team on Hack The Box
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    logged @ <span id="ts"></span> • hash: 0xDEADBEEF • report to nobody
-  </footer>
-
-  <script src="static/js/404.js"></script>
+<script src="static/js/error.js"></script>
 </body>
 </html>
